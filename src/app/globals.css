@@ -2,20 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    @apply bg-slate-900 text-white;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+/* Scrollbar */
+::-webkit-scrollbar {
+  @apply w-2.5 h-2.5;
+}
+/* Scrollbar track */
+::-webkit-scrollbar-track {
+  @apply bg-gray-400/20 rounded-lg;
+}
+/* Scrollbar handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-500/50 rounded-lg;
+}
+/* Scrollbar handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-500/90;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
