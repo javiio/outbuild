@@ -1,7 +1,6 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Menu, MenuButton, MenuItems, MenuItem } from '@headlessui/react';
-import cn from 'classnames';
-import { IconButton, Icon, Icons, type IconName } from '@/core/ui';
+import { Icon, Icons, type IconName } from '@/core/ui';
 
 interface ActionsMenuProps {
   icon?: IconName

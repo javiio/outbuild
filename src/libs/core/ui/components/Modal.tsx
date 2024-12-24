@@ -1,7 +1,6 @@
 import React from 'react';
-import { Dialog, DialogPanel, DialogTitle, DialogBackdrop } from '@headlessui/react';
-import { CloseButton } from '@headlessui/react'
-import { Text, Icons, IconButton } from '..';
+import { Dialog, DialogPanel, DialogBackdrop } from '@headlessui/react';
+import { Text, IconButton } from '..';
 
 export interface ModalProps {
   isOpen: boolean

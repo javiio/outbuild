@@ -1,5 +1,4 @@
 import React from 'react';
-// import { ProvideDomains } from '~domains';
 import { ProvideRealtimeActions } from '@/core/data';
 import { ProvideProjects } from '@/projects';
 import { ProvideTasks } from '@/tasks';

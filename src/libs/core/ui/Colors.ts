@@ -14,11 +14,6 @@ export const Colors = {
   cyan: 'cyan',
   lime: 'lime',
   amber: 'amber',
-  // emerald: 'emerald',
-  // sky: 'sky',
-  // fuchsia: 'fuchsia',
-  // rose: 'rose',
-  // violet: 'violet',
 } as const;
 
 export const randomColor = (): ColorName => {

@@ -1,6 +1,5 @@
 import React from 'react';
 import cn from 'classnames';
-import { Icons } from '@/core/ui';
 import { ActionType } from '@/core/data';
 import { RealtimeUsersPreview, ProfilePic } from '@/users';
 import { useTasks } from '../';

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { debounce } from 'lodash';
 import { ActionType } from '@/core/data';
-import { Icons } from '@/core/ui';
 import { ProfilePic, useUsers } from '@/users';
 
 const DEBOUNCE_TIMEOUT = 1000;

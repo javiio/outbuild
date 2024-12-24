@@ -14,9 +14,15 @@ import {
 import { useProjects, type Project } from '@/projects';
 import type { TaskData } from '@/tasks';
 
-interface TaskContextProps extends CollectionContext<TaskData> {};
+interface TaskContextProps extends CollectionContext<TaskData> {
+  currentProject?: Project;
+  setCurrentProject: (project: Project) => void;
+};
 
-const TaskContext = createContext<TaskContextProps>(defaultCollectionContext);
+const TaskContext = createContext<TaskContextProps>({
+  setCurrentProject: () => {},
+  ...defaultCollectionContext,
+});
 
 export const ProvideTasks = ({ children }: { children: ReactNode }) => {
   const [currentProject, setCurrentProject] = useState<Project>();

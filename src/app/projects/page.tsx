@@ -38,4 +38,4 @@ export default function ProjectsPage() {
       </Page.Panel>
     </Page>
   )
-}
+};

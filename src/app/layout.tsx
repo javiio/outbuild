@@ -1,6 +1,5 @@
 'use client';
 
-import Head from 'next/head';
 import { ProvideData } from '@/core/data';
 import { AuthRedirect } from '@/auth';
 import { Providers, AppLayout } from "@/core/ui";

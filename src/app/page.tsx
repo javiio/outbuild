@@ -1,8 +1,8 @@
 'use client';
 import Head from 'next/head';
 import React from 'react'
-import { Page, Button, Icons } from '@/core/ui';
-import { ProjectBoard, useProjects, ProjectsTabs } from '@/projects';
+import { Page } from '@/core/ui';
+import { ProjectBoard, ProjectsTabs } from '@/projects';
 import { TaskPanel, useTasks } from '@/tasks';
 
 export default function ProjectsPage() {

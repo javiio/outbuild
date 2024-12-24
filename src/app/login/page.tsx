@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-import { Logo } from '@/core/ui';
 import { AuthForm } from '@/auth';
 
 export default function Login() {

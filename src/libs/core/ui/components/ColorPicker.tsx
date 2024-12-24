@@ -1,7 +1,7 @@
 import React from 'react';
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import cn from 'classnames';
-import { Colors, IconButton, Text, type ColorName } from '../';
+import { Colors, Text, type ColorName } from '../';
 
 interface ColorPickerProps {
   value?: ColorName

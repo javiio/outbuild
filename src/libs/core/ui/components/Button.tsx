@@ -1,6 +1,6 @@
 import React from 'react';
 import cn from 'classnames';
-import { Icon, ButtonLoader, Loading, type IconName } from '../';
+import { Icon, ButtonLoader, type IconName } from '../';
 
 interface ButtonProps extends React.ComponentPropsWithoutRef<'button'> {
   children: React.ReactNode
